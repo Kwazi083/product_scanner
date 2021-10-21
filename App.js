@@ -7,7 +7,7 @@
  */
 
 import 'react-native-gesture-handler';
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -19,7 +19,7 @@ import {
   TextInput,
   Button,
   Alert,
-  Pressable
+  Pressable,
 } from 'react-native';
 
 import {
@@ -29,15 +29,15 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { KEY_ANDROID } from "@env";
-const RNFS = require('react-native-fs')
-const Sound = require('react-native-sound')
+// import { KEY_ANDROID } from "@env";
+const RNFS = require('react-native-fs');
+const Sound = require('react-native-sound');
 import Tts from 'react-native-tts';
 import firestore from '@react-native-firebase/firestore';
 import auth from '@react-native-firebase/auth';
-import { BarCodeScanner } from 'expo-barcode-scanner';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {BarCodeScanner} from 'expo-barcode-scanner';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from './screens/login';
 import Home from './screens/home';
 import Register from './screens/register';
@@ -47,7 +47,6 @@ import Todos from './screens/todos';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
-
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -117,8 +116,8 @@ const styles = StyleSheet.create({
     width: 300,
     overflow: 'hidden',
     borderRadius: 30,
-    backgroundColor: 'tomato'
-  }
+    backgroundColor: 'tomato',
+  },
 });
 
 export default App;
